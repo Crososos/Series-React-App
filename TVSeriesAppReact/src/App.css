@@ -1,0 +1,370 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(135deg, #3498db, #e74c3c);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.selectButton {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #660808;
+  background-color: #00aeff;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  justify-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* For App */
+
+.searchBox {
+  text-align: center;
+  color: red;
+}
+
+.custom-select {
+  color: #333;
+}
+
+/* Tabloooooooo */
+table {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+  filter: blur(0);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #1b6608;
+  color: #000000;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #27b98e;
+  color: #ad0909;
+}
+
+.editButton {
+  background-color: red;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Tabloooooooo */
+
+/* TableSearch */
+
+/* Genel stiller */
+.TableSearch {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.TableSearch-DiziAra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.TableSearch-DiziAra label {
+  font-weight: bold;
+}
+
+.TableSearch-DiziAra-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.TableSearch-DiziAra button {
+  padding: 8px;
+  background-color: #1b6608;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.TableSearch-Date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.TableSearch-Date label {
+  font-weight: bold;
+}
+
+.TableSearch-Date input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.TableSearch-Date button {
+  padding: 8px;
+  background-color: #1b6608;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* TableSearch */
+
+/* Result.jsx */
+
+.result-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.result-card__image {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.result-card__content {
+  padding: 10px;
+}
+
+.result-card__title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result-card__vote-average {
+  font-size: 20px;
+  color: #555;
+  margin-right: 1000px; 
+}
+
+/* Result.jsx */
+
+/* MySeriesModal.jsx */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.modal-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.season-card {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.season-card h3 {
+  margin: 0;
+  padding: 5px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.season-card div {
+  color: #1b6608;
+  align-items: center;
+  justify-items: center;
+}
+
+.modal-button {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* MySeriesModal.jsx */
+
+/* editmodal.jsx */
+
+.editmodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.editmodal-content {
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 80%;
+}
+.editmodal-button {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.editmodal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editmodal-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.editmodal-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+/* editmodal.jsx */
+
+.SearchBar {
+  width: 300px; 
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  font-size: 16px; 
+  color: #333; 
+}
+
+/* Giriş alanı üzerine gelince stil değişikliği */
+.SearchBar:hover {
+  border-color: #1b6608; 
+  box-shadow: 0 0 5px rgba(27, 102, 8, 0.5); 
+}
+
+.SearchBar-div{
+  margin-top: 20px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .result-card__title {
+    font-size: 20px;
+  }
+
+  .result-card__vote-average {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .result-card__title {
+    font-size: 18px;
+  }
+
+  .result-card__vote-average {
+    font-size: 10px;
+  }
+}

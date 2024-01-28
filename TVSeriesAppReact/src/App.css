@@ -347,8 +347,6 @@ tbody tr:nth-child(odd) {
   margin-top: 20px;
 }
 
-
-
 @media only screen and (max-width: 768px) {
   .result-card__title {
     font-size: 20px;
